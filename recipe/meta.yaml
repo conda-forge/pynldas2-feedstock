@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever >=0.3.6
+    - async-retriever >=0.3.8
     - h5netcdf
     - numpy >=1.17
     - pandas >=1.0
