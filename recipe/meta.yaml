@@ -1,5 +1,5 @@
 {% set name = "pynldas2" %}
-{% set version = "0.1.12" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynldas2-{{ version }}.tar.gz
-  sha256: 7abea8132843ed5b71494ef2b32107df8dd698bbe0a13a2b23293bc29b7798e5
+  sha256: 9586b49b917929fb5cf5f97f05da62688fdc82133c91106d42c7773e5d345444
 
 build:
   noarch: python
