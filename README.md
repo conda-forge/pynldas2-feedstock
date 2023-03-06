@@ -1,11 +1,11 @@
-About pynldas2
-==============
+About pynldas2-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynldas2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/pynldas2
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynldas2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Get NLDAS2 forcing data.
 
