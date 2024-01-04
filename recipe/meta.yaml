@@ -1,5 +1,5 @@
 {% set name = "pynldas2" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynldas2-{{ version }}.tar.gz
-  sha256: dc8a06f19424f1971c7d8e1fb182a5083a56043308c787af2d2ef1fa59978ada
+  sha256: ed7d49c927b57988dedad7618c3144688c5f8b5f0a104dd24ec01d309d306dd0
 
 build:
   noarch: python
@@ -22,11 +22,11 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.16,>=0.15.2
+    - async-retriever <0.17,>=0.16
     - h5netcdf
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoutils <0.16,>=0.15.2
+    - pygeoutils <0.17,>=0.16
     - pyproj >=2.2
     - rioxarray >=0.11
     - xarray >=2022.03.0
