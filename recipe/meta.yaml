@@ -1,5 +1,5 @@
 {% set name = "pynldas2" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynldas2-{{ version }}.tar.gz
-  sha256: c160639b4c38e4649f93cfd5b8220ad8e279d9623579c91ea609af08a1abfc45
+  sha256: 0308a84a66dee14064c71207c8c6dbcf3640f539105adfd4e0286b79018cbd85
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatchling >=1.12
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - async-retriever <0.18,>=0.17
     - h5netcdf
     - numpy >=1.21
