@@ -22,14 +22,15 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - async-retriever <0.19,>=0.18
-    - h5netcdf
-    - numpy >=1.21
-    - pandas >=1.0
-    - pygeoutils <0.19,>=0.18
-    - pyproj >=2.2
-    - rioxarray >=0.11
-    - xarray >=2022.03.0
+    - aiofiles
+    - aiohttp >=3.8.3
+    - netcdf4
+    - numpy >=2
+    - pandas >=1
+    - pyproj >=3.0.1
+    - rioxarray >=0.15
+    - shapely >=2
+    - xarray >=2024.7
 
 test:
   imports:
