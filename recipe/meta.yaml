@@ -1,5 +1,5 @@
 {% set name = "pynldas2" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynldas2-{{ version }}.tar.gz
-  sha256: f95af62cca13076fc10b8c5755479601bac765b719c4225a8f1823b696db65cd
+  sha256: 335dd6151857be5a1142060353695af37f17be7ffe36131fc6ed80d4ecc54ab1
 
 build:
   noarch: python
@@ -22,15 +22,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - aiofiles
-    - aiohttp >=3.8.3
-    - nest-asyncio
     - netcdf4
     - numpy >=2
     - pandas >=1
     - pyproj >=3.0.1
     - rioxarray >=0.15
     - shapely >=2
+    - tiny-retriever >=0.1.3
     - xarray >=2024.7
 
 test:
